@@ -1,0 +1,223 @@
+/*Estilos globales - Mobile First */
+
+* {
+  /* siempre vamos a incluir el borde y el padding en los tamaños de los elementos*/
+  box-sizing: border-box;
+}
+
+/* Colores de la paleta
+#44BAC1 - celeste
+#b4e4e6 - celeste claro formulario
+#225e61 - celest oscuro boton formulario
+#70B62C - verde
+#fff - blanco
+*/
+
+/*Estilos básicos */
+html {
+  font-family: "Calibri", sans-serif;
+
+}
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #fff;
+  color: #44BAC1;
+  padding: 15px;
+  }
+
+header img {
+    float: left;
+  }
+  
+header h1 {
+    position: relative;
+    top: 18px;
+    left: 10px;
+  }
+
+  .w3-sofia {
+    font-family: Sofia, cursive;
+  }
+  
+  .h1 {
+    padding: 15px;
+  }  
+
+
+.logo img {
+  width:"150px";
+  height:"150px";
+}
+
+nav{
+  display: block;
+
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #70B62C;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+nav li:hover , .seleccionado {
+  background-color: #44BAC1;
+}
+
+nav li a {
+text-decoration: none;
+color: #ffffff;
+}
+
+section::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.vidriera {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+.vidriera .producto{
+  text-align: center;
+    }
+
+.vidriera img{
+  max-width: 200px;
+  max-height: 200px;
+  }
+
+  .unProducto {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+  }
+  
+  .unProducto .descripcion{
+    text-align: left;
+      }
+  
+  .unProducto img{
+    max-width: 250px;
+    max-height: 250px;
+    }
+
+.aside {
+  background-color: #44BAC1;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+iframe {
+  width: 100%;
+  float: left;
+}
+
+footer {
+  background-color: #70B62C;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+
+/* Moviles */
+[class*="col-"] {
+  width: 100%;
+  float: left;
+  padding: 15px;
+}
+/* Media Queries para tablets y escritorio*/
+
+  /* Tablets */
+@media only screen and (min-width: 481px) {
+
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+  /* Escritorio */
+@media only screen and (min-width: 768px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+/*Estilos de formulario*/
+.miForm > * {
+  font-size: 1em; 
+ }
+ .miForm {
+   display: grid;
+   grid-template-columns: [labels] auto [controls] 1fr;
+   grid-auto-flow: row;
+   grid-gap: .8em .5em;
+   background: #b4e4e6;
+   padding: 1.2em;
+ }
+ .miForm > label,
+ .miForm > fieldset  {
+   grid-column: labels;
+   grid-row: auto;
+ }
+ .miForm > input, 
+ .miForm > select,
+ .miForm > textarea {
+   grid-column: controls;
+   grid-row: auto;
+   padding: .4em;
+   border: 0;
+ }
+ .miForm > fieldset,
+ .miForm > button {
+   grid-column: span 2;
+ }  
+ .miForm > button {
+   padding: 1em;
+   background: #44BAC1;
+   border: 0;
+   color: white;
+   font-size: 1.5em;
+   }
+
+ .miForm > textarea {
+   min-height: 3em;
+   }

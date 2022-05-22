@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head> <!--Comienzo de cabecera-->
+
+        <!-- Titulos y Metas -->
+            
+            <div>MundoBendi - Todo para tu bebé</div>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <meta name="description" content="MundoBendi, una empresa argentina dedicada a la comercializacion y distribucion de artículos para bebes y niños">	
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />	
+        
+        <!-- CSS -->
+            <link rel="stylesheet" href="css/estilos.css" />
+        
+        <!-- Fuentes externas -->
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+            <script src="https://kit.fontawesome.com/aafd96573c.js" crossorigin="anonymous"></script>
+
+
+    </head> --<!--Fin de cabecera-->
+    
+    <body>
+
+        <header class="col-12">
+            <a href="mundobendi.html"> <img class="col-3" src="imagenes/Logo III.png" alt="mundobendi Logo"><a>
+            <h1 class="w3-sofia">Todo lo que necesitás para tu bebé, encontralo en mundobendi.com.ar</h1>
+        </header>
+
+        <nav class="col-12 col-s-12 ">
+            <ul>
+              <li><a href="mundobendi.html">Productos</a></li>
+              <li>Servicios</li>
+              <li>Quiénes somos</li>
+              <li class="seleccionado"> <a href="form.html"> Contacto</a></li>
+            </ul>
+          </nav>
+          
+        <section>          
+            <div class="col-9 col-s-12">
+              <h1>Contáctenos</h1>
+
+              <form name="formulario" class="miForm" action="" method="get">
+                <label for="nombre_cliente">Nombre </label>
+                <input type="text" name="nombre_cliente" id="nombre_cliente">
+              
+                <label for="num_telefono">Telefono </label>
+                <input type="tel" name="num_telefono" id="num_telefono">
+              
+                <label for="dir_mail">Email </label>
+                <input type="email" name="dir_mail" id="dir_mail">
+              
+                <fieldset>
+                  <legend>Cúal es el motivo de su consulta?</legend>
+                  <label> <input type="radio" name="consulta" id="consulta_prod"  value="Productos"> Productos </label>
+                  <label> <input type="radio" name="consulta" id="consulta_serv"  value="Servicios"> Servicios </label>
+                  <label> <input type="radio" name="consulta" id="consulta_otro"  value="Otros"> Otros </label>
+                </fieldset>
+              
+                <label for="tipo_cliente">Tipo de cliente</label>
+                <select name="tipo_cliente" id="tipo_cliente">
+                  <option value="" selected>Seleccione tipo cliente</option>
+                  <option value="particular" >Particular</option>
+                  <option value="empresa" >Empresa</option>
+                  <option value="ong" >ONG</option>
+                </select>
+
+                <label for="comentario">Consulta/mensaje</label>
+                <textarea name="comentario" id="comentario" maxlength="500"></textarea>
+              
+                <button type="submit" id="btn" name="btn">Enviar mensaje</button>
+              
+              </form>
+
+            </div>
+          
+            <div class="col-3 col-s-9">
+                <div class="aside">
+                    <iframe src="https://miprimerembarazo.com.ar" title="Publicidad"></iframe>
+                    <div>Para anuncios: info@mundobendi.com.ar</div>
+                </div>    
+            </div>
+        </section>
+          
+        <footer>
+            <adress>
+                <div>
+                    Domicilio: Av. Siempreviva 365 <br>
+                    E-mail: info@mundobendi.com.ar <br>
+                    <i class="fa-brands fa-facebook"></i> Facebook<br>
+                    <i class="fa-brands fa-instagram"></i> Instagram<br>
+                    <i class="fa-solid fa-mobile-screen"></i> (+54 11) 555-12345
+                </div>
+            </adress>
+        </footer>
+        
+        <!-- Scripts -->
+        <script src="js/scripts.js" type="text/javascript"></script>        
+
+    </body>
+<html>
